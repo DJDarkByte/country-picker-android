@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'nl.darkbyte'
+group = 'com.github.DJDarkByte'
 
 android {
   compileSdkVersion 29
@@ -9,7 +9,7 @@ android {
     minSdkVersion 14
     targetSdkVersion 29
     versionCode 17
-    versionName "2.0.2"
+    versionName "2.0.3"
   }
   buildTypes {
     release {
@@ -22,6 +22,6 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'androidx.appcompat:appcompat:1.1.0'
-  implementation 'com.google.android.material:material:1.0.0'
-  implementation 'androidx.recyclerview:recyclerview:1.0.0'
+  implementation 'com.google.android.material:material:1.1.0'
+  implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
