@@ -19,9 +19,8 @@ public class Country {
   }
 
   Country(String code, String name, String dialCode, int flag, String currency) {
-    Locale locale = new Locale("", code);
     this.code = code;
-    this.name = locale.getDisplayCountry();
+    this.name = new Locale("", code).getDisplayName();
     this.dialCode = dialCode;
     this.flag = flag;
     this.currency = currency;
